@@ -115,18 +115,29 @@ const cinquecento: Auto = {
 //si//
 
 //20) Crea un'interfaccia generica per una risposta API.  //
+
 interface ApiResponse<T> {
-    success: boolean;
-    message: string;
-    data: T;
+  success: boolean;
+  message: string;
+  data: T;
+}
+
+
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+
+const userResponse: ApiResponse<User> = {
+  success: true,
+  message: "Dati utente recuperati con successo",
+  data: {
+    id: 1,
+    name: "Davide",
+    email: "davide@example.com"
   }
-  const userResponse: ApiResponse<User> = {
-    success: true,
-    message: "Dati utente recuperati con successo",
-    data: {
-      id: 1,
-      name: "Davide",
-      email: "davide@example.com",
-    },
-  };
-  
+};
+
+console.log(userResponse);
