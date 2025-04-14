@@ -48,4 +48,12 @@ var cinquecento = {
     cilindrata: 60,
     modello: 'Electric'
 };
-//prova percorsi
+var userResponse = {
+    success: true,
+    message: "Dati utente recuperati con successo",
+    data: {
+        id: 1,
+        name: "Davide",
+        email: "davide@example.com",
+    },
+};

@@ -120,4 +120,13 @@ interface ApiResponse<T> {
     message: string;
     data: T;
   }
-  //prova percorsi
+  const userResponse: ApiResponse<User> = {
+    success: true,
+    message: "Dati utente recuperati con successo",
+    data: {
+      id: 1,
+      name: "Davide",
+      email: "davide@example.com",
+    },
+  };
+  
